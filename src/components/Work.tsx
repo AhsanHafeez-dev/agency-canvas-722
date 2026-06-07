@@ -49,17 +49,17 @@ const projects = [
 
 export default function Work() {
   return (
-    <section id="work" className="py-24 lg:py-32 bg-gray-50">
+    <section id="work" className="py-24 lg:py-32 bg-gray-50 dark:bg-gray-950">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16 lg:mb-20">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-700 text-xs font-medium tracking-wide mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs font-medium tracking-wide mb-4">
             Our Portfolio
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
             Featured Work
           </h2>
-          <p className="text-gray-500 text-lg leading-relaxed">
+          <p className="text-gray-500 dark:text-gray-400 text-lg leading-relaxed">
             Each project is a story of collaboration, creativity, and
             craftsmanship. Here are some we&apos;re proud to share.
           </p>

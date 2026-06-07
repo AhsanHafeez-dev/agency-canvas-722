@@ -13,17 +13,17 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 lg:py-32 bg-gray-50">
+    <section id="contact" className="py-24 lg:py-32 bg-gray-50 dark:bg-gray-950">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16 lg:mb-20">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-700 text-xs font-medium tracking-wide mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs font-medium tracking-wide mb-4">
             Get In Touch
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
             Let&apos;s Create Together
           </h2>
-          <p className="text-gray-500 text-lg leading-relaxed">
+          <p className="text-gray-500 dark:text-gray-400 text-lg leading-relaxed">
             Ready to bring your vision to life? We&apos;d love to hear from you.
             Drop us a message and we&apos;ll get back within 24 hours.
           </p>
@@ -33,38 +33,38 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-8">
             <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
-                <Mail className="w-5 h-5 text-indigo-600" />
+              <div className="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center flex-shrink-0">
+                <Mail className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
               </div>
               <div>
-                <h4 className="text-sm font-semibold text-gray-900">
+                <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
                   Email Us
                 </h4>
-                <p className="text-sm text-gray-400 mt-1">
+                <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">
                   hello@canvasagency.com
                 </p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
-                <Phone className="w-5 h-5 text-indigo-600" />
+              <div className="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center flex-shrink-0">
+                <Phone className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
               </div>
               <div>
-                <h4 className="text-sm font-semibold text-gray-900">
+                <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
                   Call Us
                 </h4>
-                <p className="text-sm text-gray-400 mt-1">+1 (555) 123-4567</p>
+                <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">+1 (555) 123-4567</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
-                <MapPin className="w-5 h-5 text-indigo-600" />
+              <div className="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
               </div>
               <div>
-                <h4 className="text-sm font-semibold text-gray-900">
+                <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
                   Visit Us
                 </h4>
-                <p className="text-sm text-gray-400 mt-1">
+                <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">
                   123 Creative Lane, Suite 200
                   <br />
                   San Francisco, CA 94102
@@ -76,13 +76,13 @@ export default function Contact() {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="lg:col-span-3 bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
+            className="lg:col-span-3 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700"
           >
             <div className="grid sm:grid-cols-2 gap-5 mb-5">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 mb-1.5"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5"
                 >
                   Full Name
                 </label>
@@ -90,14 +90,14 @@ export default function Contact() {
                   type="text"
                   id="name"
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all"
                   placeholder="John Doe"
                 />
               </div>
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-1.5"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5"
                 >
                   Email Address
                 </label>
@@ -105,7 +105,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all"
                   placeholder="john@example.com"
                 />
               </div>
@@ -113,7 +113,7 @@ export default function Contact() {
             <div className="mb-5">
               <label
                 htmlFor="subject"
-                className="block text-sm font-medium text-gray-700 mb-1.5"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5"
               >
                 Subject
               </label>
@@ -121,14 +121,14 @@ export default function Contact() {
                 type="text"
                 id="subject"
                 required
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all"
                 placeholder="Project Inquiry"
               />
             </div>
             <div className="mb-6">
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-700 mb-1.5"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5"
               >
                 Message
               </label>
@@ -136,7 +136,7 @@ export default function Contact() {
                 id="message"
                 rows={4}
                 required
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all resize-none"
                 placeholder="Tell us about your project..."
               />
             </div>
