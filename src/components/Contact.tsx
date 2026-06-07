@@ -53,7 +53,7 @@ export default function Contact() {
                 <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
                   Call Us
                 </h4>
-                <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">+1 (555) 123-4567</p>
+                <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">+92-307-2793796</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
